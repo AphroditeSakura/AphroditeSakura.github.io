@@ -178,33 +178,29 @@
 <pre><code>1   C:\Users\lin&gt;git --version    # 查看git版本
 2   git version 2.27.0.windows.1  # git安装成功</code></pre><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>首先去官网下载node.js：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">下载链接</a>，下载好之后打开安装包安装就可以了，安装完毕打开命令提示符 </p>
 <p><strong>检查node是否安装成功</strong></p>
-<pre><code>1   node -v</code></pre><p><strong>检查npm是否安装成功</strong></p>
-<pre><code>2   nmp -v</code></pre><p>在命令行工具里的操作结果如下：</p>
+<pre><code>1   node -v</code></pre><p>在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:\Users\lin&gt;node -v  # 查看node版本
-2   v12.18.2              # node安装成功
-3   C:\Users\lin&gt;npm -v   # 查看npm版本
-4   6.14.5                # npm安装成功
-5   C:Users\lin\&gt;npm install -g cnpm --registry=https://registry.npm.taobao.org   #安装cnmp
-6   C:\Users\lin\AppData\Roaming\npm\cnpm -&gt; C:\Users\lin\AppData\Roaming\npm
-\node_modules\cnpm\bin\cnpm
-7   + cnpm@6.1.1   
-8   added 685 packages from 957 contributors in 66.836s   #安装成功
-
-9   C:\Users\lin&gt;cnpm install-g hexo-cli  # 安装hexo
-10   Downloading hexo-cli to C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli_tmp   下载hexo
-11   Copying C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli_tmp
+2   v12.18.2              # node安装成功</code></pre><p><strong>检查npm是否安装成功</strong></p>
+<pre><code>2   nmp -v</code></pre><p>在命令行工具里的操作结果如下：</p>
+<pre><code>1   C:\Users\lin&gt;node -v  # 查看npm版本
+2   v12.18.2              # npm安装成功</code></pre><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p><strong>利用npm安装cnpm</strong></p>
+<pre><code>1   npm install -g cnpm --registry=https://regisry.npm.npm.taobao.org</code></pre><p>在命令行工具里的操作结果如下：</p>
+<pre><code>1   C:Users\lin\&gt;npm install -g cnpm --registry=https://registry.npm.taobao.org   #安装cnmp
+2   C:\Users\lin\AppData\Roaming\npm\cnpm -&gt; C:\Users\lin\AppData\Roaming\npm\node_modules\cnpm\bin\cnpm
+3   + cnpm@6.1.1   
+4   added 685 packages from 957 contributors in 66.836s   #安装成功</code></pre><p><strong>在利用cnpm安装hexo</strong></p>
+<pre><code>1   cnpm install -g hexo-cli</code></pre><p>在命令行工具里的操作结果如下：</p>
+<pre><code>1   C:\Users\lin&gt;cnpm install-g hexo-cli  # 安装 hexo
+2   Downloading hexo-cli to C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli_tmp   下载 hexo
+3   Copying C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli_tmp
 \_hexo-cli@3.1.0@hexo-cli to C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli
-12   Installing hexo-cli&apos;s dependencies to C:\Users\lin\AppData\Roaming\npm
+4   Installing hexo-cli&apos;s dependencies to C:\Users\lin\AppData\Roaming\npm
 \node_modules\hexo-cli/node_modules
-13   [1/11] abbrev@^1.1.1 installed at node_modules\_abbrev@1.1.1@abbrev
+5   [1/11] abbrev@^1.1.1 installed at node_modules\_abbrev@1.1.1@abbrev
 .. ......
-23  [11/11] resolve@^1.11.0 installed at node_modules\_resolve@1.17.0@resolve
-24   All packages installed (81 packages installed from npm registry,
-used 1m(network 1m), speed 41.94kB/s, json 80(173.25kB), tarball 2.37MB)
-25  [hexo-cli@3.1.0] link C:\Users\lin\AppData\Roaming\npm\hexo@ -&gt; C:\Users
-\lin\AppData\Roaming\npm\node_modules\hexo-cli\bin\hexo   #安装成功hexo</code></pre><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p><strong>利用npm安装cnpm</strong></p>
-<pre><code>1   npm install -g cnpm --registry=https://regisry.npm.npm.taobao.org</code></pre><p><strong>在利用cnpm安装hexo</strong></p>
-<pre><code>1   cnpm install -g hexo-cli</code></pre><p><strong>检查hexo是否安装成功</strong></p>
+15  [11/11] resolve@^1.11.0 installed at node_modules\_resolve@1.17.0@resolve
+16   All packages installed (81 packages installed from npm registry,used 1m(network 1m), speed 41.94kB/s, json 80(173.25kB), tarball 2.37MB)
+17  [hexo-cli@3.1.0] link C:\Users\lin\AppData\Roaming\np\hexo@ -&gt; C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli\bin\hexo   # 安装成功 hexo</code></pre><p><strong>检查hexo是否安装成功</strong></p>
 <pre><code>1   hexo-v</code></pre><p>在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:\Users\lin&gt;hexo -v   #查看hexo版本
 2   hexo-cli: 3.1.0
@@ -227,7 +223,6 @@ used 1m(network 1m), speed 41.94kB/s, json 80(173.25kB), tarball 2.37MB)
 <pre><code>1   C:\Users\lin\blog&gt;hexo s       # 在本地启动blog
 2   INFO  Start processing         
 3   INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.  #启动成功</code></pre><p>启动成功之后在浏览器里预览，打开该地址<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> </p>
-<p>date: 2020-07-05 15:54:37</p>
 
       
 
