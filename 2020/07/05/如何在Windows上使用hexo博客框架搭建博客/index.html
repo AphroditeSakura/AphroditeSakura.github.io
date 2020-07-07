@@ -16,7 +16,7 @@
 <meta property="og:description" content="Hexo简介Hexo是一款基于 Node.js 的静态博客框架，该框架依赖少且易于安装使用，可以方便的生成静态网页托管在GitHub。使用 Markdown（或其他渲染引擎）解析文章，即可利用靓丽的主题生成静态网页。Hexo搭建步骤  安装Git 安装Node.js 安装Hexo  在Hexo搭建Blog 在GitHub创建个人仓库 将hexo部署到Github  安装Git 首先去官网下载git">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-05T07:54:37.062Z">
-<meta property="article:modified_time" content="2020-07-07T08:53:20.062Z">
+<meta property="article:modified_time" content="2020-07-07T09:44:47.429Z">
 <meta property="article:author" content="LinzzZ">
 <meta property="article:tag" content="fw">
 <meta name="twitter:card" content="summary">
@@ -174,39 +174,46 @@
 </ol>
 <h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p> 首先去官网下载git for windows：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">下载链接</a>，但国内官网下载可能有点慢，嫌慢的可以选择淘宝的镜像：<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">下载链接</a>，选一个自己需要的版本下载好之后打开安装包安装就可以了，安装完毕打开命令提示符（<em>用组合键   Win + R 输入cmd</em>)。 </p>
 <p><strong>检查Git是否安装成功</strong></p>
-<pre><code>1   git --version</code></pre><p>在命令行工具里的操作如下：</p>
+<pre><code>1   git --version</code></pre><p>在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:\Users\lin&gt;git --version    # 查看git版本
 2   git version 2.27.0.windows.1  # git安装成功</code></pre><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>首先去官网下载node.js：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">下载链接</a>，下载好之后打开安装包安装就可以了，安装完毕打开命令提示符 </p>
 <p><strong>检查node是否安装成功</strong></p>
 <pre><code>1   node -v</code></pre><p><strong>检查npm是否安装成功</strong></p>
-<pre><code>2   nmp -v</code></pre><p>在命令行工具里的操作如下：</p>
+<pre><code>2   nmp -v</code></pre><p>在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:\Users\lin&gt;node -v  # 查看node版本
 2   v12.18.2              # node安装成功
 3   C:\Users\lin&gt;npm -v   # 查看npm版本
-4   6.14.5                # npm安装成功</code></pre><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p><strong>利用npm安装cnpm</strong></p>
+4   6.14.5                # npm安装成功
+5   C:Users\lin\&gt;npm install -g cnpm --registry=https://registry.npm.taobao.org   #安装cnmp
+6   C:\Users\lin\AppData\Roaming\npm\cnpm -&gt; C:\Users\lin\AppData\Roaming\npm
+\node_modules\cnpm\bin\cnpm
+7   + cnpm@6.1.1   
+8   added 685 packages from 957 contributors in 66.836s   #安装成功
+
+9   C:\Users\lin&gt;cnpm install-g hexo-cli  # 安装hexo
+10   Downloading hexo-cli to C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli_tmp   下载hexo
+11   Copying C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli_tmp
+\_hexo-cli@3.1.0@hexo-cli to C:\Users\lin\AppData\Roaming\npm\node_modules\hexo-cli
+12   Installing hexo-cli&apos;s dependencies to C:\Users\lin\AppData\Roaming\npm
+\node_modules\hexo-cli/node_modules
+13   [1/11] abbrev@^1.1.1 installed at node_modules\_abbrev@1.1.1@abbrev
+.. ......
+23  [11/11] resolve@^1.11.0 installed at node_modules\_resolve@1.17.0@resolve
+24   All packages installed (81 packages installed from npm registry,
+used 1m(network 1m), speed 41.94kB/s, json 80(173.25kB), tarball 2.37MB)
+25  [hexo-cli@3.1.0] link C:\Users\lin\AppData\Roaming\npm\hexo@ -&gt; C:\Users
+\lin\AppData\Roaming\npm\node_modules\hexo-cli\bin\hexo   #安装成功hexo</code></pre><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p><strong>利用npm安装cnpm</strong></p>
 <pre><code>1   npm install -g cnpm --registry=https://regisry.npm.npm.taobao.org</code></pre><p><strong>在利用cnpm安装hexo</strong></p>
-<pre><code>1   cnpm install -g hexo-cli   # 安装hexo</code></pre><p><strong>检查hexo是否安装成功</strong></p>
-<pre><code>1   hexo-v</code></pre><p>在命令行工具里的操作显示如下：</p>
+<pre><code>1   cnpm install -g hexo-cli</code></pre><p><strong>检查hexo是否安装成功</strong></p>
+<pre><code>1   hexo-v</code></pre><p>在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:\Users\lin&gt;hexo -v   #查看hexo版本
 2   hexo-cli: 3.1.0
 3   os: Windows_NT 10.0.18362 win32 x64
 4   node: 12.18.2
-5   1v8: 7.8.279.23-node.39
-6   uv: 1.38.0
-7   zlib: 1.2.11
-8   brotli: 1.0.7
-9   ares: 1.16.0
-10  modules: 72
-11  nghttp2: 1.41.0
-12  napi: 6
-13  llhttp: 2.0.4
-14  http_parser: 2.9.3
-15  openssl: 1.1.1g
-16  cldr: 37.0
-17  icu: 67.1
-18  tz: 2019c
-19  unicode: 13.0</code></pre><h3 id="在Hexo上搭建Blog"><a href="#在Hexo上搭建Blog" class="headerlink" title="在Hexo上搭建Blog"></a>在Hexo上搭建Blog</h3><p>首先打开命令行工具在C:\Users\lin目录下新建一个空文件夹myblog,在该文件夹下初始化blog<br><strong>利用hexo初始化blog</strong></p>
-<pre><code>1   hexo init #初始化blog</code></pre><p> 完成初始化，并且检查初始化blog是否成功，在命令行工具里的操作显示如下：</p>
+..  .....
+
+19  unicode: 13.0          #安装成功</code></pre><h3 id="在Hexo上搭建Blog"><a href="#在Hexo上搭建Blog" class="headerlink" title="在Hexo上搭建Blog"></a>在Hexo上搭建Blog</h3><p>首先打开命令行工具在C:\Users\lin目录下新建一个空文件夹myblog,在该文件夹下初始化blog<br><strong>利用hexo初始化blog</strong></p>
+<pre><code>1   hexo init </code></pre><p> 完成初始化，并且检查初始化blog是否成功，在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:\Users\lin&gt;cd                # 打印当前路径
 2   C:\Users\lin                   # 当前路径
 3   C:\Users\lin&gt;mkdir myblog      # 在该路径创建myblog文件夹
@@ -216,7 +223,7 @@
 7   C:\Users\lin\myblog&gt;hexo init  # 初始化博客
 ..   .....
 16  INFO  Start blogging whit Hexo # 初始化成功</code></pre><p><strong>启动blog</strong></p>
-<pre><code>1   hexo -s</code></pre><p>在命令行工具里的操作显示如下：</p>
+<pre><code>1   hexo -s</code></pre><p>在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:\Users\lin\blog&gt;hexo s       # 在本地启动blog
 2   INFO  Start processing         
 3   INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.  #启动成功</code></pre><p>启动成功之后在浏览器里预览，打开该地址<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> </p>
