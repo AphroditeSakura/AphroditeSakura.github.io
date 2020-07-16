@@ -163,9 +163,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>** 部署并启动 tomcat 服务器 **<br>    1. 解压apache-tomcat-6.16.zip到非中文目录下<br>    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME<br>    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown。bat<br>    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功</p>
+        <p>*<em>部署并启动 tomcat 服务器 *</em><br>    1. 解压apache-tomcat-6.16.zip到非中文目录下<br>    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME<br>    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat<br>    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功</p>
 <p>注意：如果以及启动tomcat应用，在启动同一个Tomcat应用，会抛异常,这是因为port ：8080已经被占用：</p>
-<pre><code>Caused by:java.net.BindException: Address already in use: bind</code></pre><p><strong>Tomcat配置</strong></p>
+<pre><code>Caused by:java.net.BindException: Address already in use: bind</code></pre><p><strong>Tomcat 配置</strong></p>
 <pre><code>tomcat是apache的开源的servlet容器
 修改tomcat:打开config目录下的 server.xml 文件修改 port：8080到你指定的端口号，保存即可。重新启动服务器
 为了任意目录下都可以打开tomcat 
