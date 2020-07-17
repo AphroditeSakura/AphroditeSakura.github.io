@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>tomcat服务器的部署 | LinzzZ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="*部署并启动 tomcat 服务器 *    1. 解压apache-tomcat-6.16.zip到非中文目录下    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功 注意：">
+  <meta name="description" content="** 部署并启动 tomcat 服务器 **    1. 解压apache-tomcat-6.16.zip到非中文目录下    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tomcat服务器的部署">
 <meta property="og:url" content="http://yoursite.com/2020/07/16/tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E9%83%A8%E7%BD%B2/index.html">
 <meta property="og:site_name" content="LinzzZ的博客">
-<meta property="og:description" content="*部署并启动 tomcat 服务器 *    1. 解压apache-tomcat-6.16.zip到非中文目录下    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功 注意：">
+<meta property="og:description" content="** 部署并启动 tomcat 服务器 **    1. 解压apache-tomcat-6.16.zip到非中文目录下    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-16T06:10:32.299Z">
-<meta property="article:modified_time" content="2020-07-16T06:42:42.914Z">
+<meta property="article:modified_time" content="2020-07-17T13:03:51.003Z">
 <meta property="article:author" content="LinzzZ">
 <meta property="article:tag" content="fw">
 <meta name="twitter:card" content="summary">
@@ -163,15 +163,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>*<em>部署并启动 tomcat 服务器 *</em><br>    1. 解压apache-tomcat-6.16.zip到非中文目录下<br>    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME<br>    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat<br>    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功</p>
-<p>注意：如果以及启动tomcat应用，在启动同一个Tomcat应用，会抛异常,这是因为port ：8080已经被占用：</p>
-<pre><code>Caused by:java.net.BindException: Address already in use: bind</code></pre><p><strong>Tomcat 配置</strong></p>
+        <p>** 部署并启动 tomcat 服务器 **<br>    1. 解压apache-tomcat-6.16.zip到非中文目录下<br>    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME<br>    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat<br>    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功</p>
+<p>注意：如果以及启动tomcat应用，在启动同一个Tomcat应用，会抛异常,这是因为port:8080已经被占用：</p>
+<pre><code>Caused by:java.net.BindException: Address already in use: bind</code></pre><p>** Tomcat 配置 **</p>
 <pre><code>tomcat是apache的开源的servlet容器
 修改tomcat:打开config目录下的 server.xml 文件修改 port：8080到你指定的端口号，保存即可。重新启动服务器
 为了任意目录下都可以打开tomcat 
     1、把bin目录的路径添加到path环境变量
     2、配置环境变量 CATALINA_HOME(指向tomcat的安装根目录/即 bin目录的上一层) 
-    3、在命令行工具输入catalina run/starup启动服务器  catalina stop 关闭服务器</code></pre><p><strong>web程序程序结构</strong></p>
+    3、在命令行工具输入catalina run/starup启动服务器  catalina stop 关闭服务器</code></pre><p><strong>web程序结构</strong></p>
 <pre><code>servlet规范定义的web应用程序的目录层次
 -webapp
     -WEB-INF

@@ -163,15 +163,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>*<em>部署并启动 tomcat 服务器 *</em><br>    1. 解压apache-tomcat-6.16.zip到非中文目录下<br>    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME<br>    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat<br>    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功</p>
-<p>注意：如果以及启动tomcat应用，在启动同一个Tomcat应用，会抛异常,这是因为port ：8080已经被占用：</p>
-<pre><code>Caused by:java.net.BindException: Address already in use: bind</code></pre><p><strong>Tomcat 配置</strong></p>
+        <p>** 部署并启动 tomcat 服务器 **<br>    1. 解压apache-tomcat-6.16.zip到非中文目录下<br>    2. 配置环境变量，JAVA_HOME(指向jdk的安装根目录)或者JRE_HOME<br>    3. 通过双击bin目录下的startup.bat 启动服务器，shutdown.bat<br>    4. 在浏览器中输入localhost:8080 来检验 Tomcat是否安装成功</p>
+<p>注意：如果以及启动tomcat应用，在启动同一个Tomcat应用，会抛异常,这是因为port:8080已经被占用：</p>
+<pre><code>Caused by:java.net.BindException: Address already in use: bind</code></pre><p>** Tomcat 配置 **</p>
 <pre><code>tomcat是apache的开源的servlet容器
 修改tomcat:打开config目录下的 server.xml 文件修改 port：8080到你指定的端口号，保存即可。重新启动服务器
 为了任意目录下都可以打开tomcat 
     1、把bin目录的路径添加到path环境变量
     2、配置环境变量 CATALINA_HOME(指向tomcat的安装根目录/即 bin目录的上一层) 
-    3、在命令行工具输入catalina run/starup启动服务器  catalina stop 关闭服务器</code></pre><p><strong>web程序程序结构</strong></p>
+    3、在命令行工具输入catalina run/starup启动服务器  catalina stop 关闭服务器</code></pre><p><strong>web程序结构</strong></p>
 <pre><code>servlet规范定义的web应用程序的目录层次
 -webapp
     -WEB-INF
@@ -261,7 +261,7 @@
 <pre><code>2   nmp -v</code></pre><p>在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:\Users\lin&gt;node -v  # 查看npm版本
 2   v12.18.2              # npm安装成功</code></pre><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p><strong>利用npm安装cnpm</strong></p>
-<pre><code>1   npm install -g cnpm --registry=https://regisry.npm.npm.taobao.org</code></pre><p>在命令行工具里的操作结果如下：</p>
+<pre><code>1   npm install -g cnpm --registry=https://regisrty.npm.taobao.org</code></pre><p>在命令行工具里的操作结果如下：</p>
 <pre><code>1   C:Users\lin\&gt;npm install -g cnpm --registry=https://registry.npm.taobao.org   #安装cnmp
 2   C:\Users\lin\AppData\Roaming\npm\cnpm -&gt; C:\Users\lin\AppData\Roaming\npm\node_modules\cnpm\bin\cnpm
 3   + cnpm@6.1.1   
